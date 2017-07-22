@@ -1,43 +1,43 @@
 Ques:
-
+WAP to find the unique numbers in an array.
 
 CODE:
 
-#include <cmath>
-#include <cstdio>
-#include <iostream>
-#include <algorithm>
+#include <stdio.h>
 
-using namespace std;
+// This program is taking hardcoded values.
 
-int main(){
-    int i;
-    string time;
-    cin >> time;
-    //cout << time[8];
-    if(time[8] == 'P')
+int main()
+{
+    int i, j, temp=0, count=1, a[5] = {1, 3, 3, 2, 1};
+
+    for(i = 0; i < 5; i++)
+    {
+        for(j = 0; j < 5-i-1; j++)
         {
-        if(time[0] == '1' && time[1] == '2')
+            if(a[j] > a[j+1])
             {
-            time[0] = '1';
-            time[1] = '2';
-        }
-        else {
-            time[0] += 1;
-            time[1] += 2;
+                 temp = a[j];
+                 a[j] = a[j+1];
+                 a[j+1] = temp;
+            }
         }
     }
-    else if(time[8] == 'A')
+
+    for(i = 0; i < 5 ; )
+    {
+        count = 1;
+        for(j = i+1; j < 5; j++)
         {
-        if(time[0] == '1' && time[1] == '2')
+            if( a[i] == a[j])
             {
-            time[0] = '0';
-            time[1] = '0';
+                count++;
+            }
         }
-    }
-    for(i=0;i<8;i++)
+        if( count == 1)
         {
-        cout << time[i];
+            printf("%d \n", a[i]);
+        }
+        i += count;
     }
-    return 0;
 }
