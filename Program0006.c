@@ -13,6 +13,7 @@ int main()
     scanf("%d",&x);
 
     ans = (x>>31) | !(!x);
+        
     printf("%d\n",ans);
     return ans;
 }
