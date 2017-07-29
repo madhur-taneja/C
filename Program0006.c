@@ -1,7 +1,7 @@
-Ques:
-WAP to find out the sign of an input number using bitwise operators. Return 1 if +ve, -1 if -ve and 0 if 0.
+// Ques:
+// WAP to find out the sign of an input number using bitwise operators. Return 1 if +ve, -1 if -ve and 0 if 0.
 
-CODE:
+// CODE:
 
 #include <stdio.h>
 
