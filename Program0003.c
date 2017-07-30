@@ -1,7 +1,7 @@
-Ques:
-WAP to check if number is prime or not but by optimizing the code to reduce the time complexity.
+// Ques:
+// WAP to check if number is prime or not but by optimizing the code to reduce the time complexity.
 
-CODE:
+// CODE:
 
 #include <stdio.h>
 #include <math.h>
