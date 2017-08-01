@@ -1,7 +1,7 @@
-Ques:
-WAP to find the time taken by a program to perform selection sorting using 'gettimeofday' function.
+// Ques:
+// WAP to find the time taken by a program to perform selection sorting using 'gettimeofday' function.
 
-CODE:
+// CODE:
 
 #include <stdio.h>
 #include <assert.h>
