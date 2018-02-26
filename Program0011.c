@@ -21,12 +21,12 @@ int maxDifference(int a_size, int* a) {
             if(a[i] < a[j]) {
                 diff = a[j] - a[i];
                 if(diff > mDiff && diff != 0)
-                mDiff = diff;
+                    mDiff = diff;
             }
         }
     }
     if(mDiff == 0)
-            return -1;
+        return -1;
     else
         return mDiff;
 }
